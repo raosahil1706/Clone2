@@ -9,8 +9,8 @@ import '../Pages/ChatPage.dart';
 class Homescreen extends StatefulWidget {
   // Homescreen({Key key}): super(key: key);
   Homescreen({super.key, required this.chatmodels,required this.sourChat});
-  final List<ChatModel> chatmodels;
-  final ChatModel sourChat;
+  final List<ChatModel>? chatmodels;
+  final ChatModel? sourChat;
 
   @override
   _HomescreenState createState() => _HomescreenState();
@@ -87,8 +87,8 @@ class _HomescreenState extends State<Homescreen>
         children: [
           CameraPage(),
           ChatPage(
-            chatmodels: widget.chatmodels,
-            sourChat: widget.sourChat,
+            chatmodels: widget.chatmodels!,
+            sourChat: widget.sourChat!,
           ),
           StatusPage(),
           CallScreen(),

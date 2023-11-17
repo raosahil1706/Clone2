@@ -1,17 +1,26 @@
 import 'package:camera/camera.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/NewScreen/LandingScreen.dart';
 import 'package:flutter_app/Screens/CameraScreen.dart';
 import 'package:flutter_app/Screens/LoginScreen.dart';
-
+import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   cameras = await availableCameras();
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatefulWidget {
+  const MainApp({super.key});
+
+  @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,8 +31,8 @@ class MainApp extends StatelessWidget {
             .copyWith(secondary: const Color(0xFF12DC7E) // Your accent color
                 ),
       ),
-      //home: LandingScreen(),
-      home: LoginScreen(),
+      home: const LandingScreen(),
+      // home: LoginScreen(),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/NewScreen/LoginPage.dart';
+import 'package:flutter_app/NewScreen/PhoneAuth.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -64,7 +65,7 @@ class LandingScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(builder: (builder) => const LoginPage()),
+                      MaterialPageRoute(builder: (builder) => const PhoneAuth()),
                       (route) => false);
                 },
                 child: Container(

@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "599440698368",
-    "project_id": "mark1-eb94e",
-    "storage_bucket": "mark1-eb94e.appspot.com"
+    "project_number": "121144914873",
+    "project_id": "clone-4a4c6",
+    "storage_bucket": "clone-4a4c6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:599440698368:android:eb9d2931f8eb56317cfce5",
+        "mobilesdk_app_id": "1:121144914873:android:328a2299524fdc2273fc68",
         "android_client_info": {
-          "package_name": "Mark_1.Clone_"
+          "package_name": "com.example.Clone"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDt1MRjiPEdjL6sPhO-q5ACKEsOyMeO6cE"
+          "current_key": "AIzaSyCYL1-2q8rC_cEzNms64i3Arjq2l_wV9DI"
         }
       ],
       "services": {
